@@ -5,17 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>my-boot</artifactId>
+        <artifactId>my-boot-common</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>my-boot-common</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>my-boot-common-web</module>
-        <module>my-boot-common-mybatis</module>
-        <module>my-boot-common-core</module>
-    </modules>
-
+    <artifactId>my-boot-common-core</artifactId>
 
 </project>
