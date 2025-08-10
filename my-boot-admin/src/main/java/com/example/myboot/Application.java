@@ -1,4 +1,4 @@
-package org.example.myboot;
+package com.example.myboot;
 
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
@@ -28,6 +28,7 @@ public class Application {
                             "Application " + appName +" is running! Access URLs:\n\t" +
                             "Local: \t\thttp://localhost:" + port + path + "/\n\t" +
                             "External: \thttp://" + ip + ":" + port + path + "/\n\t" +
+                            "Document: \thttp://" + ip + ":" + port + path + "/swagger-ui.html\n\t" +
                             "------------------------------------------------------------" + "\n"
             );
         };

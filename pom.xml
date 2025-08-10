@@ -9,7 +9,7 @@
         <version>3.4.8</version>
     </parent>
 
-    <groupId>org.example</groupId>
+    <groupId>com.example</groupId>
     <artifactId>my-boot</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
@@ -21,12 +21,10 @@
     <modules>
         <module>my-boot-admin</module>
         <module>my-boot-common</module>
-        <module>my-boot-common/my-boot-common-mybatis</module>
     </modules>
 
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
-        <java.version>17</java.version>
         <hutool.version>5.8.39</hutool.version>
     </properties>
 
@@ -42,7 +40,7 @@
             </dependency>
 
             <dependency>
-                <groupId>org.example</groupId>
+                <groupId>com.example</groupId>
                 <artifactId>my-boot-common</artifactId>
                 <version>${revision}</version>
             </dependency>
