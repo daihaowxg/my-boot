@@ -9,10 +9,10 @@ import org.springframework.core.env.Environment;
 import java.net.InetAddress;
 
 @SpringBootApplication
-public class Application {
+public class MyBootApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(MyBootApplication.class, args);
     }
 
     @Bean
