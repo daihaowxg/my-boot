@@ -17,6 +17,7 @@
         <module>my-framework</module>
         <module>my-module-infra</module>
         <module>my-module-system</module>
+        <module>my-server</module>
     </modules>
 
     <properties>
