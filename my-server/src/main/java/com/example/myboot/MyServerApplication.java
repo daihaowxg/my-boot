@@ -1,4 +1,4 @@
-package com.example;
+package com.example.myboot;
 
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
