@@ -10,5 +10,39 @@
     </parent>
 
     <artifactId>my-framework</artifactId>
+    <name>${project.artifactId}</name>
+    <description>
+        组件模块分成两类：
+        1. 框架组件：如我们熟悉的 MyBatis、Redis 等等的拓展。
+        2. 业务组件：和业务相关的组件的封装，例如说数据字典、操作日志等等。如果是业务组件，模块名会包含 biz。
+
+
+        每个组件包括两部分：
+        1. core 包：核心代码，提供组件的主要功能。
+        2. config 包：Spring Boot 的自动配置，提供组件的自动装配。
+    </description>
+
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>my-common</module>
+        <module>my-spring-boot-starter-web</module>
+        <module>my-spring-boot-starter-mybatis</module>
+        <module>my-spring-boot-starter-security</module>
+        <module>my-spring-boot-starter-redis</module>
+
+        <module>my-spring-boot-starter-monitor</module>
+        <module>my-spring-boot-starter-test</module>
+
+        <module>my-spring-boot-starter-excel</module>
+        <module>my-spring-boot-starter-job</module>
+        <module>my-spring-boot-starter-mq</module>
+        <module>my-spring-boot-starter-protection</module>
+        <module>my-spring-boot-starter-websocket</module>
+
+        <module>my-spring-boot-starter-biz-data-permission</module>
+        <module>my-spring-boot-starter-biz-ip</module>
+        <module>my-spring-boot-starter-biz-tenant</module>
+    </modules>
 
 </project>
