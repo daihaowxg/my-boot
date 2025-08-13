@@ -11,6 +11,9 @@
     <properties>
         <spring-boot.version>2.7.18</spring-boot.version>
         
+        <knife4j.version>4.5.0</knife4j.version>
+        <springdoc.version>1.8.0</springdoc.version>
+        
         <!-- 工具类 -->
         <hutool.version>5.8.35</hutool.version>
     </properties>
@@ -24,6 +27,17 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc.version}</version>
             </dependency>
             
             <!-- 工具类 -->
