@@ -10,6 +10,9 @@
 
     <properties>
         <spring-boot.version>2.7.18</spring-boot.version>
+        
+        <!-- 工具类 -->
+        <hutool.version>5.8.35</hutool.version>
     </properties>
 
 
@@ -21,6 +24,27 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            
+            <!-- 工具类 -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            
+            
+            
+            <!-- 对自己创建的模块进行统一版本管理 -->
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>my-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>my-spring-boot-starter-web</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
