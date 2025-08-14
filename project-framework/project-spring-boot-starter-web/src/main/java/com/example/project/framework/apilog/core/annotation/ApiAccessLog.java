@@ -63,7 +63,7 @@ public @interface ApiAccessLog {
     /**
      * 操作分类
      * <p>
-     * 默认值为 {@link OperateTypeEnum#UNKNOW}，表示其他类型。
+     * 默认值为 {@link OperateTypeEnum#UNKNOWN}，表示其他类型。
      */
-    OperateTypeEnum operateType() default OperateTypeEnum.UNKNOW;
+    OperateTypeEnum operateType() default OperateTypeEnum.UNKNOWN;
 }

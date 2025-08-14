@@ -16,7 +16,7 @@ public enum OperateTypeEnum {
     DELETE(4, "删除"),
     IMPORT(5, "导入"),
     EXPORT(6, "导出"),
-    UNKNOW(0, "未知");
+    UNKNOWN(0, "未知");
 
     private final Integer type;
     private final String description;
