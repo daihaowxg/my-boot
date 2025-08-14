@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>my-boot</artifactId>
+    <artifactId>project-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
-    <description>my-boot</description>
+    <description>project-boot</description>
 
     <!-- 子模块 -->
     <modules>
