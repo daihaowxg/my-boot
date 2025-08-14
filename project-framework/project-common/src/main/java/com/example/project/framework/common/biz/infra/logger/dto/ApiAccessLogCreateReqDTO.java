@@ -39,7 +39,7 @@ public class ApiAccessLogCreateReqDTO {
     private String requestMethod;
 
     /**
-     * 访问地址
+     * 请求地址
      */
     @NotNull(message = "访问地址不能为空")
     private String requestUrl;
@@ -50,7 +50,7 @@ public class ApiAccessLogCreateReqDTO {
     private String requestParams;
 
     /**
-     * 响应结果
+     * 响应体
      */
     private String responseBody;
 
@@ -77,8 +77,8 @@ public class ApiAccessLogCreateReqDTO {
     private String operateName;
 
     /**
-     * 操作分类
-     * @see OperateTypeEnum
+     * 操作类型
+     * @see com.example.project.framework.apilog.core.enums.OperateTypeEnum
      */
     private Integer operateType;
 
@@ -95,10 +95,10 @@ public class ApiAccessLogCreateReqDTO {
     private LocalDateTime endTime;
 
     /**
-     * 执行时长，单位：毫秒
+     * 执行耗时，单位：毫秒
      */
-    @NotNull(message = "执行时长不能为空")
-    private Integer duration;
+    @NotNull(message = "执行耗时不能为空")
+    private Integer costTime;
 
     /**
      * 结果码
