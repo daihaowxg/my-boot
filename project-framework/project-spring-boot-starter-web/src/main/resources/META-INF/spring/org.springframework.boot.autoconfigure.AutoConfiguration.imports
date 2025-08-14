@@ -1,0 +1,6 @@
+com.example.project.framework.apilog.config.ProjectApiLogAutoConfiguration
+com.example.project.framework.jackson.config.ProjectJacksonAutoConfiguration
+com.example.project.framework.swagger.config.ProjectSwaggerAutoConfiguration
+com.example.project.framework.web.config.ProjectWebAutoConfiguration
+com.example.project.framework.xss.config.ProjectXssAutoConfiguration
+com.example.project.framework.banner.config.ProjectBannerAutoConfiguration
