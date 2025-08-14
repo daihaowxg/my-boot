@@ -13,11 +13,11 @@
 
     <!-- 子模块 -->
     <modules>
-        <module>my-dependencies</module>
-        <module>my-framework</module>
-        <module>my-module-infra</module>
-        <module>my-module-system</module>
-        <module>my-server</module>
+        <module>project-dependencies</module>
+        <module>project-framework</module>
+        <module>project-module-infra</module>
+        <module>project-module-system</module>
+        <module>project-server</module>
     </modules>
 
     <properties>
@@ -31,7 +31,7 @@
         <dependencies>
             <dependency>
                 <groupId>com.example</groupId>
-                <artifactId>my-dependencies</artifactId>
+                <artifactId>project-dependencies</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>

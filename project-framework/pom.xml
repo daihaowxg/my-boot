@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>project-boot</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>project-framework</artifactId>
+    <name>${project.artifactId}</name>
+    <description>
+        组件模块分成两类：
+        1. 框架组件：如我们熟悉的 MyBatis、Redis 等等的拓展。
+        2. 业务组件：和业务相关的组件的封装，例如说数据字典、操作日志等等。如果是业务组件，模块名会包含 biz。
+
+
+        每个组件包括两部分：
+        1. core 包：核心代码，提供组件的主要功能。
+        2. config 包：Spring Boot 的自动配置，提供组件的自动装配。
+    </description>
+
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>project-common</module>
+        <module>project-spring-boot-starter-web</module>
+        <module>project-spring-boot-starter-mybatis</module>
+        <module>project-spring-boot-starter-security</module>
+        <module>project-spring-boot-starter-redis</module>
+
+        <module>project-spring-boot-starter-monitor</module>
+        <module>project-spring-boot-starter-test</module>
+
+        <module>project-spring-boot-starter-excel</module>
+        <module>project-spring-boot-starter-job</module>
+        <module>project-spring-boot-starter-mq</module>
+        <module>project-spring-boot-starter-protection</module>
+        <module>project-spring-boot-starter-websocket</module>
+
+        <module>project-spring-boot-starter-biz-data-permission</module>
+        <module>project-spring-boot-starter-biz-ip</module>
+        <module>project-spring-boot-starter-biz-tenant</module>
+    </modules>
+
+</project>
