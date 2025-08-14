@@ -1,6 +1,8 @@
 package com.example.project.framework.apilog.config;
 
+import com.example.project.framework.apilog.core.interceptor.ApiAccessLogInterceptor;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @AutoConfiguration(after = ProjectApiLogAutoConfiguration.class)
@@ -11,4 +13,14 @@ public class ProjectApiLogAutoConfiguration implements WebMvcConfigurer {
     // public FilterRegistrationBean<ApiAccessLogFilter>
 
 
+    /**
+     * 添加 API 访问日志拦截器
+     * <p>
+     * @param registry 拦截器注册器
+     * @see com.example.project.framework.apilog.core.interceptor.ApiAccessLogInterceptor
+     */
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new ApiAccessLogInterceptor());
+    }
 }
